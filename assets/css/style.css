@@ -146,9 +146,9 @@ main {
   display: flex;
   gap: 10px;
   overflow: scroll;
+  flex-shrink: 0;
 }
 
 .right-immanquables img {
-  width: 100%;
   object-fit: cover;
 }
