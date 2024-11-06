@@ -100,10 +100,15 @@ main {
   padding: 12px;
 }
 
+.main-navigation > div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 /* PICTURES */
 
 .pictures {
-  /* background-color: yellow; */
   height: 430px;
   display: flex;
   gap: 2px;
@@ -130,6 +135,35 @@ main {
   background-color: pink;
 }
 
+/* DESCRIPTION */
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.description .col1 {
+  background-color: bisque;
+  width: 500px;
+}
+
+.description .col2 {
+  background-color: #ff5d5d;
+  border-radius: 10%;
+}
+
+.description .col2 button {
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+}
+
 /* CARROUSSEL */
 
 .immanquables {
@@ -151,4 +185,25 @@ main {
 
 .right-immanquables img {
   object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf1ec;
+  height: 150px;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer span {
+  font-weight: bold;
 }
