@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+/* common rules */
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+body,
+* {
+  font-family: TS-Reg;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: TS-Med;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: TS-Med;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h1 > span {
+  color: rgb(254, 93, 93);
+}
+
+/* HEADER STYLES */
+
+header {
+  /* background-color: blue; */
+  padding: 10px 0px;
+}
+
+header img {
+  height: 50px;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+header nav > div {
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+header nav > div:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+header nav button {
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 25px;
+}
+
+/* MAIN STYLES */
+
+main {
+  padding-top: 30px;
+}
+
+.main-navigation {
+  /* border: 3px solid blue; */
+  display: flex;
+  height: 60px;
+  gap: 10px;
+  margin: 50px 0px;
+}
+
+.main-navigation > div {
+  border: 2px solid black;
+  flex: 1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+/* PICTURES */
+
+.pictures {
+  /* background-color: yellow; */
+  height: 430px;
+  display: flex;
+  gap: 2px;
+}
+
+.left-picture {
+  background-color: blue;
+  flex: 1;
+}
+
+.right-column {
+  /* background-color: red; */
+  width: 480px;
+}
+
+.right-column div:first-child {
+  height: calc(50% - 1px);
+  background-color: lightgreen;
+  margin-bottom: 2px;
+}
+
+.right-column div:last-child {
+  height: calc(50% - 1px);
+  background-color: pink;
+}
+
+/* CARROUSSEL */
+
+.immanquables {
+  display: flex;
+}
+
+.left-immanquables {
+  background-color: lightblue;
+  flex: 1;
+}
+
+.right-immanquables {
+  background-color: lightcoral;
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+}
+
+.right-immanquables img {
+  width: 100%;
+  object-fit: cover;
+}
