@@ -49,6 +49,9 @@ h4 {
 header {
   background-color: white;
   padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header img {
@@ -161,7 +164,7 @@ main {
 }
 
 .bloc1 {
-  width: 600px;
+  width: 55%;
 }
 
 .bloc1 p {
@@ -186,6 +189,7 @@ main {
   border-radius: 50px;
   color: white;
   padding: 20px 30px;
+  width: 200px;
   cursor: pointer;
 }
 
@@ -251,7 +255,8 @@ main {
 }
 
 .circle:hover {
-  background-color: whitesmoke;
+  background-color: black;
+  color: white;
 }
 
 ::-webkit-scrollbar {
