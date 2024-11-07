@@ -47,7 +47,7 @@ h4 {
 /* HEADER STYLES */
 
 header {
-  /* background-color: blue; */
+  background-color: white;
   padding: 10px 0px;
 }
 
@@ -84,6 +84,7 @@ header nav button {
   border-radius: 50px;
   color: white;
   padding: 15px 25px;
+  cursor: pointer;
 }
 
 /* MAIN STYLES */
@@ -184,7 +185,8 @@ main {
   border: none;
   border-radius: 50px;
   color: white;
-  padding: 15px 25px;
+  padding: 20px 30px;
+  cursor: pointer;
 }
 
 /* CARROUSSEL */
@@ -233,8 +235,8 @@ main {
 .heart {
   font-size: 25px;
   text-align: center;
-  position: relative;
-  right: -8px;
+  position: absolute;
+  right: 7px;
   top: 8px;
 }
 
