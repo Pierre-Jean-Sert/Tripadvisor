@@ -39,20 +39,40 @@
     <header>
       <!-- Menu -->
       <div class="container">
+        <!-- Traits quand on passe en 768-->
+        <div class="display-header-768">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <img src="./assets/img/logo.svg" alt="logo" />
         <nav>
-          <div><i class="fa-solid fa-house"></i> Avis</div>
-          <div><i class="fa-solid fa-heart"></i> Voyages</div>
-          <div><i class="fa-solid fa-bell"></i> Alertes</div>
-          <button>Connectez-vous</button>
-          <div><i class="fa-solid fa-basket-shopping"></i> Panier</div>
+          <div class="hidden-header-768">
+            <i class="fa-solid fa-pen"></i>
+            <span class="hidden-header-1024"> Avis</span>
+          </div>
+          <div class="hidden-header-768">
+            <i class="fa-solid fa-heart"></i
+            ><span class="hidden-header-1024"> Voyages</span>
+          </div>
+          <div class="hidden-header-768">
+            <i class="fa-solid fa-bell"></i
+            ><span class="hidden-header-1024"> Alertes</span>
+          </div>
+          <button class="hidden-header-768">Connectez-vous</button>
+          <!-- Loupe quand on passe en 768-->
+          <div class="display-header-768">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i
+            ><span class="hidden-header-1024"> Panier</span>
+          </div>
         </nav>
       </div>
     </header>
 
     <!-- Main -->
     <main class="container">
-      <div class="hero">
+      <div>
         <!-- Titre -->
         <h1><span>Explorer</span> Paris</h1>
         <p>
@@ -101,28 +121,31 @@
       </div>
 
       <!-- La ville Lumiere -->
-      <div class="description">
-        <div class="bloc1">
-          <h2>La Ville Lumière éblouit en tous points</h2>
-          <p>
-            Aucun autre endroit au monde ne fait autant rêver que Paris. ville
-            séduit par son art, son architecture, sa culture et sa cuisine, mais
-            il y a aussi des merveilles plus discrètes qui n’attendent qu’à être
-            explorées : les ruelles pavées pittoresques, les pâtisseries au coin
-            de la rue et les petits bistrots douillets qui vous invitent à boire
-            un verre de beaujolais. Préparez-vous à vous approprier Paris.
-          </p>
-        </div>
+      <section>
+        <div class="description">
+          <div class="bloc1">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. ville
+              séduit par son art, son architecture, sa culture et sa cuisine,
+              mais il y a aussi des merveilles plus discrètes qui n’attendent
+              qu’à être explorées : les ruelles pavées pittoresques, les
+              pâtisseries au coin de la rue et les petits bistrots douillets qui
+              vous invitent à boire un verre de beaujolais. Préparez-vous à vous
+              approprier Paris.
+            </p>
+          </div>
 
-        <div class="bloc2">
-          <h3>Paris : commencez à organiser !</h3>
-          <p>
-            Créez un voyage pour enregistrer et organiser toutes vos idées et
-            les visualiser sur une carte.
-          </p>
-          <button>Créer un voyage</button>
+          <div class="bloc2">
+            <h3>Paris : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créer un voyage</button>
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- Paris : les immanquables -->
       <section>

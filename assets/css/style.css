@@ -5,7 +5,7 @@
 /* common rules */
 
 .container {
-  width: 1135px;
+  max-width: 1135px;
   margin: 0 auto;
 }
 
@@ -44,7 +44,15 @@ h4 {
   font-weight: bold;
 }
 
-/* HEADER STYLES */
+i {
+  font-size: 20px;
+}
+
+section {
+  margin-top: 80px;
+}
+
+/* HEADER */
 
 header {
   background-color: white;
@@ -67,13 +75,13 @@ header > div {
 header nav {
   display: flex;
   gap: 20px;
-  /* border: 1px solid green; */
   align-items: center;
 }
 
 header nav > div {
   padding: 10px 15px;
   border-radius: 50px;
+  font-size: 18px;
 }
 
 header nav > div:hover {
@@ -88,6 +96,11 @@ header nav button {
   color: white;
   padding: 15px 25px;
   cursor: pointer;
+  font-size: 18px;
+}
+
+.display-header-768 {
+  display: none;
 }
 
 /* MAIN STYLES */
@@ -97,11 +110,10 @@ main {
 }
 
 .main-navigation {
-  /* border: 3px solid blue; */
   display: flex;
-  height: 60px;
+  height: 70px;
   gap: 10px;
-  margin: 50px 0px;
+  margin: 40px 0px;
 }
 
 .main-navigation > div {
@@ -196,7 +208,7 @@ main {
 /* CARROUSSEL */
 
 .immanquables {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
 }
 
@@ -234,6 +246,8 @@ main {
 .rating {
   font-size: 12px;
   color: #04aa6c;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .heart {
@@ -283,4 +297,32 @@ main {
 
 .footer span {
   font-weight: bold;
+}
+
+/* Import des styles CSS liés aux breakpoints*/
+
+/* Lorsque la page fait moins de 1184px */
+@media (max-width: 1024px) {
+  /* Header */
+  .hidden-header-1024 {
+    display: none;
+  }
+}
+
+/* Lorsque la page fait moins de 768px */
+@media (max-width: 768px) {
+  /*Header */
+  .hidden-header-768 {
+    display: none;
+  }
+
+  .display-header-768 {
+    display: block;
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+
+  header img {
+    height: 30px;
+  }
 }
