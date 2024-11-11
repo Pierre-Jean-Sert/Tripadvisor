@@ -106,8 +106,8 @@ header nav button {
 
 /* MAIN STYLES */
 
-main {
-  padding-top: 30px;
+.explorer {
+  margin-top: 30px;
 }
 
 .main-navigation {
